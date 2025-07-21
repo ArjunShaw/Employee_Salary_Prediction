@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #e0f7fa, #fdfbfb);
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    background: #1c0fd1;
+    color: white;
+    width: 300px;
+    padding: 30px;
+    box-shadow: 3px 0 10px rgba(0,0,0,0.1);
+}
+
+.sidebar h2 {
+    margin-bottom: 20px;
+}
+
+.sidebar label {
+    display: block;
+    margin-top: 15px;
+}
+
+.sidebar input,
+.sidebar select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 8px;
+    border: none;
+}
+
+.sidebar button {
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #18cdb2;
+    color: white;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.sidebar button:hover {
+    background-color: #1de9d8;
+}
+
+.main-content {
+    flex: 1;
+    padding: 40px;
+    overflow-y: auto;
+}
+
+.main-content h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #004d40;
+}
+
+.data-table {
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin-top: 20px;
+}
+
+.data-row {
+    margin: 10px 0;
+    padding: 8px;
+    background: #e0f2f1;
+    border-radius: 6px;
+}
+
+.result {
+    margin-top: 30px;
+    background-color: #fff9c4;
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 6px solid #fbc02d;
+    animation: fadeIn 1s ease-in;
+}
+
+.tip {
+    font-style: italic;
+    color: #616161;
+    margin-top: 10px;
+}
+.placeholder {
+    color: #999;
+    font-size: 1rem;
+    font-style: italic;
+    margin-top: 20px;
+}
+
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
